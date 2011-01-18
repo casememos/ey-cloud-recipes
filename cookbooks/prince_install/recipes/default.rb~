@@ -2,7 +2,7 @@
 # Cookbook Name:: prince_install
 # Recipe:: default
 #
-
+if ['solo', 'app', 'app_master'].include?(node[:instance_role])
 
 cookbook_file "/tmp/prince-7.1-linux.tar.gz" do
   source "prince-7.1-linux.tar.gz"
@@ -36,5 +36,5 @@ bash "install_prince" do
 end
 
 
-
+end
 
