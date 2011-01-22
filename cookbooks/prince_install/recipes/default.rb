@@ -8,7 +8,7 @@ ey_cloud_report "prince" do
   message "now installing prince"
 end
 
-cookbook_file "/tmp/prince-7.1-linux.tar.gz" do
+remote_file "/tmp/prince-7.1-linux.tar.gz" do
   source "prince-7.1-linux.tar.gz"
   mode 0755
   owner "root"
@@ -24,7 +24,7 @@ bash "untar_prince" do
 
 end
 
-cookbook_file "/tmp/prince-7.1-linux/install_prince.sh" do
+remote_file "/tmp/prince-7.1-linux/install_prince.sh" do
   source "install_prince.sh"
   mode 0755
   owner "root"

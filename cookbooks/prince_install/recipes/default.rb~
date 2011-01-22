@@ -4,6 +4,10 @@
 #
 if ['solo', 'app', 'app_master'].include?(node[:instance_role])
 
+ey_cloud_report "prince" do
+  message "now installing prince"
+end
+
 cookbook_file "/tmp/prince-7.1-linux.tar.gz" do
   source "prince-7.1-linux.tar.gz"
   mode 0755
