@@ -68,3 +68,5 @@
 #require_recipe "mysql_replication_check"
 
 require_recipe "prince_install"
+
+#require_recipe "delayed_job"
