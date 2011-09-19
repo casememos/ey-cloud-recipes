@@ -69,4 +69,4 @@
 
 require_recipe "prince_install"
 
-#require_recipe "delayed_job"
+require_recipe "delayed_job"
